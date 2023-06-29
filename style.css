@@ -83,7 +83,7 @@ section {
 
 .home-img img {
     width: 35vw;
-    height: 45vw;
+    /* height: 45vw; */
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -170,7 +170,7 @@ span  {
 
 .about-img img {
     width: 35vw;
-    height: 45vw;
+    /* height: 45vw; */
 }
 
 .heading {
@@ -503,7 +503,7 @@ span  {
     }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 345px) {
     .home-img img {
         width: 90vw;
     }
