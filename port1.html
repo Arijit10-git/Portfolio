@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+
+    <!--custom css--->
+    <link rel="stylesheet" href="port1.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="home">
+            <h2>PORTFOLIO</h2>
+            <p>This Portfolio made by Arijit with the help of HTML,CSS and JAVASCRIPT.</p>
+            <a href="#" onclick="show();">Watch Video</a> 
+            <a href="index.html#portfolio">Back to Portfolio</a>
+        </div>
+        <div class="popup">
+            <video src="/videos/port1-vid.mp4" controls="true"></video> 
+            <img src="/images/close.png" onclick="show();" class="close" alt="">
+        </div>
+    </section>
+    <script>
+        function show(){
+            var popup = document.querySelector(".popup");
+            var video = document.querySelector("video");
+            popup.classList.toggle("active");
+            video.pause();
+            video.currentTime =0;
+        }
+    </script>
+</body>
+</html>

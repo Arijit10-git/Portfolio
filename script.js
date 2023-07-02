@@ -93,3 +93,21 @@ const sendEmail = (e) => {
 
 
 contactForm.addEventListener("submit", sendEmail);
+
+
+/*=================portfolio video===============*/ 
+
+const button =document.getElementById("modalShow");
+const videoContainer =document.querySelector(".video-container");
+const close =document.querySelector(".close");
+
+
+button.addEventListener('click', ()=>{
+    videoContainer.classList.add("show");
+    console.log("CLicked");
+});
+
+close.addEventListener('click', ()=>{
+    videoContainer.classList.remove("show");
+});
+

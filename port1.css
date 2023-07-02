@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', san-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/portfolio1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home {
+    position: relative;
+    max-width: 500px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.home h2 {
+    color: #ffc800;
+    font-family: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.home p {
+    color: #fff;
+    padding: 5px 10px;
+    text-align: justify;
+}
+
+.home a {
+    display: inline-block;
+    background-color: #262626;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: 20px;
+    font-size: 20px;
+    border: 5px solid #fff;
+}
+
+.popup {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.popup.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, .4);
+}
+
+.popup .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    max-width: 35px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+@media (max-width: 991px){
+    .popup video{
+        max-width: 90%;
+    }
+}
